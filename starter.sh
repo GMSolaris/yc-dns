@@ -2,10 +2,8 @@
 
   PHD=$(readlink -f $0)
   PHD=$(dirname $PHD)
-  
-
   cd $PHD
-
+  export PATH=$PATH:/home/kvazik/yandex-cloud/bin
 
 ########## variables #############
 LOGFILE="./logs/yc-dns-server.log"
