@@ -19,7 +19,7 @@ attempts_success=$attempts_default
 function startup 
 {
 ########## Login to yc ###########
-yc config profile create my-robot-profile > /dev/null 2>&1
+yc config profile create my-robot-profile >> $LOGFILE
 yc config set cloud-id b1g14lt2g1e8mgfftilg
 yc config set folder-id b1gbtvt18s1l7gc5ommr
 
